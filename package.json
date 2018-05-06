@@ -33,7 +33,7 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "electron": "1.8.2-beta.5",
+    "electron": "2.0.0",
     "electron-packager": "~9.1.0"
   },
   "dependencies": {
