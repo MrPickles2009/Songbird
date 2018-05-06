@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/buttons.css"/>
+	<title>Songbird</title>
+
+</head>
+<body>
+
+    <style>
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+
+    <div id="title-bar">
+
+        <div id="title-bar-btns">
+
+            <button id="settings-btn"><img src="../img/icons/settings.png" style="float: left;" align="top" width="25" height="25"></button>
+
+            <button id="min-btn"><img src="../img/icons/min.png" align="top" width="25" height="25"></button>
+
+            <button id="max-btn"><img src="../img/icons/max.png" align="top" width="25" height="25"></button>
+
+            <button id="close-btn"><img src="../img/icons/close.png" align="top" width="25" height="25"></button>
+
+        </div>
+    </div>
+
+    <script src="../js/buttons.js"></script>
+
+    <div class="container">
+        <div class="settings">Settings</div>
+        <div class="close">Close</div>
+        <div class="sidebar">
+            <h4 class="sitename"><center><a href="index.html">S O N G B I R D</a></center></h4>
+            <ul>
+                <li><a href="browse.html"><img align="middle" height="35" width="35" src="../img/icons/browse.png" />&nbsp;&nbsp;<p1 style="font-family: 'Lato', sans-serif; font-size:18px; font-weight: bold; color: #50CC50" ;>Browse</p1></a></li>
+                <li><a href="hot.html"><img align="middle" height="35" width="35" src="../img/icons/hot.png" />&nbsp;&nbsp;<p1 style="font-family: 'Lato', sans-serif; font-size:18px; font-weight: bold; color: #F83520" ;>Hot</p1></a></li>
+                <li><a href="faves.html"><img align="middle" height="35" width="35" src="../img/icons/faves.png" />&nbsp;&nbsp;<p1 style="font-family: 'Lato', sans-serif; font-size:18px; font-weight: bold; color: #FF6699" ;>Favorites</p1></a></li>
+                <li><a href="discover.html"><img align="middle" height="35" width="35" src="../img/icons/discover.png" />&nbsp;&nbsp;<p1 style="font-family: 'Lato', sans-serif; font-size:18px; font-weight: bold; color: #F99849" ;>Discover</p1></a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="content">
+                <h1 style="font-family: 'Lato', sans-serif; font-weight: bold; color: #F83520" ;><a style="font-size:40px; text-decoration: none; color: #6dd095">Welcome to Songbird.</a></h1>
+                <h1 style="font-family: 'Lato', sans-serif; font-weight: bold; color: #F83520" ;><a href="hot.html" style="text-decoration: none; color: #F83520">Hot</a> this week</h1>
+
+                <!--HOT THIS WEEK-->
+                <div style="height:450px; width:initial; background-image:url(../img/HotThisWeek.png);font-size:40px;">
+                    <center>
+                        <iframe src="https://embed.spotify.com/?uri=spotify:track:7wGoVu4Dady5GV0Sv4UIsx&theme=white&view=coverart" style="padding-top:60px"; width="250" view=coverart height="330" frameborder="0" align="middle" allowtransparency="true"></iframe>
+                        <iframe src="https://embed.spotify.com/?uri=spotify:track:0ofbQMrRDsUaVKq2mGLEAb&theme=white&view=coverart" style="padding-top:60px"; width="250" view=coverart height="330" frameborder="0" align="middle" allowtransparency="true"></iframe>
+                        <iframe src="https://embed.spotify.com/?uri=spotify:track:2ekn2ttSfGqwhhate0LSR0&theme=white&view=coverart" style="padding-top:60px"; width="250" view=coverart height="330" frameborder="0" align="middle" allowtransparency="true"></iframe>
+                    </center>
+                </div>
+
+                <br>
+
+                <!--FAVES-->
+                <h1 style="font-family: 'Lato', sans-serif; font-weight: bold; color: #FF6699" ;><a href="faves.html" style="text-decoration: none; color: #FF6699">Favorites</a></h1>
+                <div style="height:450px; width:initial; background-color:#fceae9;font-size:40px">
+                    <center>
+                        <iframe src="https://embed.spotify.com/?uri=spotify:track:3NWTRZ0A8xKlBP1qgNftql&theme=white&view=coverart" style="padding-top:60px" ; width="250" view=coverart height="330" frameborder="0" align="middle" allowtransparency="true"></iframe>
+                        <iframe src="https://embed.spotify.com/?uri=spotify:track:52c78QBR1VngL8gZpOTJhU&theme=white&view=coverart" style="padding-top:60px" ; width="250" view=coverart height="330" frameborder="0" align="middle" allowtransparency="true"></iframe>
+                        <iframe src="https://embed.spotify.com/?uri=spotify:track:0RU6fP23vEwHCOpjUztVna&theme=white&view=coverart" style="padding-top:60px" ; width="250" view=coverart height="330" frameborder="0" align="middle" allowtransparency="true"></iframe>
+                    </center>
+                </div>
+
+                <br>
+
+                <!--DISCOVER-->
+                <h1 style="font-family: 'Lato', sans-serif; font-weight: bold; color: #FF6699" ;><a href="discover.html" style="text-decoration: none; color: #F99849">Discover</a></h1>
+                <div style="height:450px; width:initial; background-image:url(../img/Discoverdaily.png);font-size:40px">
+                    <h1 style="font-family: 'Lato', sans-serif; font-weight: bold; font-size:40px; padding-left: 20px; color:white" ;>MUSIC FOR FRIDAY</h1>
+                    <center>
+                    <iframe src="https://embed.spotify.com/?uri=spotify:user:spotify:playlist:37i9dQZF1DX4JAvHpjipBk&theme=white&view=coverart" style="padding-left:20px" ; width="250" view=coverart height="330" frameborder="0" align="middle" allowtransparency="true"></iframe>
+                    <iframe src="https://embed.spotify.com/?uri=spotify:user:spotify:playlist:37i9dQZF1DXcRXFNfZr7Tp&theme=white&view=coverart" width="250" view=coverart height="330" frameborder="0" align="middle" allowtransparency="true"></iframe>
+                    <iframe src="https://embed.spotify.com/?uri=spotify:user:spotify:playlist:37i9dQZF1DWYBO1MoTDhZI&theme=white&view=coverart" width="250" view=coverart height="330" frameborder="0" align="middle" allowtransparency="true"></iframe>
+                </center>
+                        </div>
+
+                <!--LOGO AT BOTTOM-->
+                <footer id="footer">
+                    <center>
+                        <img align="middle" style="PADDING: 50px" height="75" width="75" src="../img/songbird_logo.png"/>
+                    </center>
+                </footer>
+        </div>
+    </div>
+</body>
+
+</html>

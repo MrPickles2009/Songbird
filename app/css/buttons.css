@@ -1,0 +1,146 @@
+﻿@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+
+
+html {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+#title-bar {
+    -webkit-app-region: drag;
+    height: 32px;
+    padding: 0px;
+    margin: 0px;
+    color: #FFFFFF;
+    font-family: 'Varela Round', sans-serif;
+    
+}
+
+
+
+#title {
+    position: fixed;
+    top: 0px;
+    left: 12px;
+    line-height: 32px;
+    font-size: 14px;
+}
+
+
+
+#title-bar-btns {
+    -webkit-app-region: no-drag;
+    position: fixed;
+    outline: none;
+    top: 0px;
+    right: 0px;
+}
+
+
+    #title-bar-btns button {
+        height: 28px;
+        width: 33px;
+        background-color: transparent;
+        outline: none;
+        border: none;
+        color: #808080;
+        font-size: 25px;
+    }
+
+
+        #title-bar-btns button:hover {
+            background-color: #ebedea;
+            outline: none;
+        }
+
+#settings-btns {
+    -webkit-app-region: no-drag;
+    position: fixed;
+    outline: none;
+    top: 0px;
+    left: 0px;
+}
+
+    #settings-btns button{
+        height: 28px;
+        width: 33px;
+        background-color: transparent;
+        outline: none;
+        border: none;
+        color: #808080;
+        font-size: 25px;
+    }
+
+
+        #settings-btns button:hover {
+            background-color: #ebedea;
+            outline: none;
+        }
+
+
+
+#content {
+    padding: 10px;
+    color: #CCCCCC;
+}
+
+
+
+a {
+    color: #6DD095;
+}
+
+/* Material Buttons */
+.authButton {
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.button {
+    display: inline-block;
+    position: relative;
+    width: 120px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 2px;
+    font-size: 0.9em;
+    background-color: #fff;
+    color: #646464;
+}
+
+.button>paper-ripple {
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.button.narrow {
+    width: 60px;
+}
+
+.button.grey {
+    background-color: #eee;
+}
+
+.button.blue {
+    background-color: #4285f4;
+    color: #fff;
+}
+
+.button.green {
+    background-color: #0f9d58;
+    color: #fff;
+}
+
+.button.raised {
+    transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0.2s;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+.button.raised:active {
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+    transition-delay: 0s;
+}

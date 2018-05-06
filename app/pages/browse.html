@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/buttons.css" />
+
+	<title>Browse</title>
+</head>
+<body>
+
+    <style>
+        ::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+
+    <div id="title-bar">
+
+        <div id="title-bar-btns">
+
+            <button id="settings-btn"><img src="../img/icons/settings.png" align="top" width="25" height="25"></button>
+
+            <button id="min-btn"><img src="../img/icons/min.png" align="top" width="25" height="25"></button>
+
+            <button id="max-btn"><img src="../img/icons/max.png" align="top" width="25" height="25"></button>
+
+            <button id="close-btn"><img src="../img/icons/close.png" align="top" width="25" height="25"></button>
+
+        </div>
+    </div>
+
+    <script src="../js/buttons.js"></script>
+
+    <div class="container">
+        <div class="settings">Settings</div>
+        <div class="close">Close</div>
+        <div class="sidebar">
+            <h4 class="sitename"><center><a href="index.html">S O N G B I R D</a></center></h4>
+            <ul>
+                <li class="active"><a href="browse.html"><img align="middle" height="35" width="35" src="../img/icons/browse.png" />&nbsp;&nbsp;<p1 style="font-family: 'Lato', sans-serif; font-size:18px; font-weight: bold; color: #50CC50" ;>Browse</p1></a></li>
+                <li><a href="hot.html"><img align="middle" height="35" width="35" src="../img/icons/hot.png" />&nbsp;&nbsp;<p1 style="font-family: 'Lato', sans-serif; font-size:18px; font-weight: bold; color: #F83520" ;>Hot</p1></a></li>
+                <li><a href="faves.html"><img align="middle" height="35" width="35" src="../img/icons/faves.png" />&nbsp;&nbsp;<p1 style="font-family: 'Lato', sans-serif; font-size:18px; font-weight: bold; color: #FF6699" ;>Favorites</p1></a></li>
+                <li><a href="discover.html"><img align="middle" height="35" width="35" src="../img/icons/discover.png" />&nbsp;&nbsp;<p1 style="font-family: 'Lato', sans-serif; font-size:18px; font-weight: bold; color: #F99849" ;>Discover</p1></a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="content">
+                <h1 style="font-family: 'Lato', sans-serif; font-weight: bold; color: #50CC50" ;>Browse</h1>
+
+                <form method="get">
+                    <div class="boxbox">
+                        <input class="search" type="text" placeholder="Browse for new songs" />
+                        <input class="submit" type="submit" value="GO" onclick="go();"/>
+                    </div>
+                </form>
+
+                <div id="searchResultsDiv">
+                    <h1 id="searchTitle" style="font-family: 'Lato', sans-serif; font-weight: bold; color: dimgrey" ;></h1>
+
+                    <div class="spotify-embed">
+                        <iframe id="searchResults" width="900" height="1432" frameborder="0" align="middle" allowtransparency="true"></iframe>
+                    </div>
+                </div>
+
+                <script>
+                    var x = document.getElementById("searchResultsDiv");
+                    x.style.display = "none";
+
+                    function go(searchRequest) {
+                            var x = document.getElementById("searchResultsDiv");
+                            if (x.style.display === "none") {
+                                x.style.display = "block";
+                            }
+                            document.getElementById('searchResults').src = "https://open.spotify.com/search/results/" + encodeURIComponent(searchRequest.trim());
+                        }
+                </script>
+
+                <h1 style="font-family: 'Lato', sans-serif; font-weight: bold; color: dimgrey" ;>New Releases for You</h1>
+
+                <div class="spotify-embed">
+                    <iframe src="https://embed.spotify.com/?uri=spotify:user:spotify:playlist:37i9dQZEVXbmaBm6QsdHP0&theme=white" width="900" height="1432" frameborder="0" align="middle" allowtransparency="true"></iframe>
+                </div>
+
+                
+
+                <script>
+                    // You can also require other files to run in this process
+                    require('../../renderer.js')
+                </script>
+            </div>
+
+            <!--LOGO AT BOTTOM-->
+            <footer>
+                <center>
+                    <img align="bottom"  style="PADDING: 50px" height="75" width="75" src="../img/songbird_logo.png" />
+                </center>
+            </footer>
+
+        </div>
+    </div>
+
+</body>
+</html>

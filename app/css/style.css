@@ -1,0 +1,260 @@
+﻿@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+
+/*
+==================================
+	Common
+==================================
+*/
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	margin: 0;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+}
+
+.container {
+	height: 100%;
+}
+
+.sidebar {
+	float: left;
+	width: 20%;
+	height: 100%;
+	position: fixed;
+	background-color: #FFFFFF;
+}
+
+.main {
+	float: right;
+	width: 80%;
+	height: 100%;
+	background-color: #FFFFFF;
+}
+
+.content {
+    padding: 50px 100px;
+}
+
+.spotify-embed {
+    float: left;
+    position: center;
+    margin-right: 13px;
+    margin-left: 0px;
+    display: flex;
+    align-items: center;
+}
+.clear{
+    clear:both;
+}
+
+
+/*
+==================================
+	Sidebar
+==================================
+*/
+.sitename {
+	text-align: center;
+}
+
+	.sitename a {
+		text-decoration: none;
+		color: #000000;
+	}
+
+		.sitename a:hover {
+			color: #B3B3B3;
+		}
+
+ul {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+	ul li {
+		list-style: none;
+		border-bottom: 1px solid white;
+		padding-left: 30px;
+		line-height: 60px;
+	}
+
+		ul li:first-child {
+			border-top: 1px solid white;
+		}
+
+		ul li:hover {
+			background-color: #E9E9E9;
+		}
+
+		ul li a {
+			text-decoration: none;
+			color: #000000;
+			display: block;
+			line-height: 60px;
+		}
+
+.active {
+	background-color: #E9E9E9;
+}
+
+
+/*
+==================================
+	Footer
+==================================
+*/
+
+#footer {
+	position: relative;
+	padding: 40px 0px 0px 0px;
+	left: 0px;
+	bottom: 0px;
+	height: 50px;
+	width: 100%;
+	background: #FFFFFF;
+}
+
+
+/*
+==================================
+	Settings and Close buttons
+==================================
+*/
+
+.settings,
+.close {
+    cursor: pointer;
+    display: inline-block;
+    height: 32px;
+    position: absolute;
+    text-indent: -10000px;
+    top: 6px;
+    width: 32px;
+    z-index: 1;
+
+    -webkit-app-region: no-drag;
+}
+
+
+/*
+==================================
+	Modals
+==================================
+*/
+
+/* The Modal (background) */
+
+.modal {
+	display: none;
+	/* Hidden by default */
+	position: fixed;
+	/* Stay in place */
+	z-index: 1;
+	/* Sit on top */
+	padding-top: 100px;
+	/* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%;
+	/* Full width */
+	height: 100%;
+	/* Full height */
+	overflow: auto;
+	/* Enable scroll if needed */
+	background-color: rgb(0, 0, 0);
+	/* Fallback color */
+	background-color: rgba(0, 0, 0, 0.4);
+	/* Black w/ opacity */
+}
+
+
+/* Modal Content */
+
+.modal-content {
+	background-color: #fefefe;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+}
+
+
+/* The Close Button */
+
+.close {
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+
+/*
+==================================
+	Browse bar
+==================================
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,800);
+form {
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 4em;
+}
+
+.boxbox {
+	height: 60px;
+	border-style: solid;
+	border-width: 6px;
+	border-color: #50CC50;
+}
+
+.search,
+.submit {
+	font-size: 18px;
+	padding: 0 15px;
+	height: 100%;
+	border: none;
+}
+
+.search {
+	highlight-color: #50CC50;
+}
+
+textarea,
+input {
+	font-family: "open sans", sans-serif;
+}
+
+textarea:focus,
+input:focus {
+	color: #2b732b;
+	outline: none;
+}
+
+.submit {
+	font-weight: 600;
+	background: #50CC50;
+	color: #fff;
+	height: 100%;
+	width: 18%;
+	float: right;
+	transition: all 100ms ease-in-out;
+}
+
+.submit:hover {
+	background: #2b732b;
+}
